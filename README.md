@@ -25,5 +25,10 @@ protected $commands = [
 ];
 ```
 
+### Usage
+```bash
+php artisan console:chat "Your message here"
+```
+
 ### License
 MIT © [Sempro AS](http://www.sempro.no)
