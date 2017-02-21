@@ -1,0 +1,18 @@
+{
+  "name": "sempro/console-driver",
+  "description": "Laravel explicit console driver for BotMan",
+  "type": "module",
+  "license": "MIT",
+  "authors": "Sempro AS",
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "Sempro\\ConsoleDriver\\": "src/"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0-dev"
+    }
+  }
+}
