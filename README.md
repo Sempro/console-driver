@@ -26,8 +26,14 @@ protected $commands = [
 ```
 
 ### Usage
+Send a message to the bot
 ```bash
 php artisan console:chat "Your message here"
+```
+
+Send a message and log a message
+```bash
+php artisan console:chat "Your message here" --log
 ```
 
 ### License
