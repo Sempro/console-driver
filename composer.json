@@ -7,15 +7,13 @@
     "name": "Sempro AS",
     "email": "post@sempro.no"
   }],
-  "require": {},
+  "require": {
+    "php": ">=5.5.9"
+  },
   "autoload": {
     "psr-4": {
       "Sempro\\ConsoleDriver\\": "src/"
     }
   },
-  "extra": {
-    "branch-alias": {
-      "dev-master": "1.0-dev"
-    }
-  }
+  "minimum-stability": "stable"
 }
