@@ -3,7 +3,10 @@
   "description": "Laravel explicit console driver for BotMan",
   "type": "module",
   "license": "MIT",
-  "authors": "Sempro AS",
+  "authors": [{
+    "name": "Sempro AS",
+    "email": "post@sempro.no"
+  }],
   "require": {},
   "autoload": {
     "psr-4": {
