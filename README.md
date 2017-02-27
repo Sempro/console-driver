@@ -1,8 +1,9 @@
 # console-driver [![Total Downloads](https://poser.pugx.org/sempro/console-driver/downloads)](https://packagist.org/packages/sempro/console-driver)
-
 > Laravel explicit console driver for BotMan
 
-### Installation
+### WIP
+
+#### Installation
 Install with composer
 ```bash
 composer require sempro/console-driver
@@ -25,7 +26,7 @@ protected $commands = [
 ];
 ```
 
-### Usage
+#### Usage
 Send a message to the bot
 ```bash
 php artisan console:chat "Your message here"
@@ -36,5 +37,5 @@ Send a message and log a message
 php artisan console:chat "Your message here" --log
 ```
 
-### License
+#### License
 MIT © [Sempro AS](http://www.sempro.no)
