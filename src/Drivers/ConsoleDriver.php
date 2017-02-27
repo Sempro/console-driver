@@ -6,6 +6,7 @@ use Mpociot\BotMan\Drivers\Driver;
 use Mpociot\BotMan\Interfaces\UserInterface;
 use Mpociot\BotMan\Message;
 use Mpociot\BotMan\Question;
+use Mpociot\BotMan\User;
 use Symfony\Component\HttpFoundation\Request;
 
 class ConsoleDriver extends Driver
@@ -66,7 +67,7 @@ class ConsoleDriver extends Driver
      */
     public function getUser(Message $matchingMessage)
     {
-        return new User();
+        return new User;
     }
 
     /**
