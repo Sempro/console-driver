@@ -16,7 +16,7 @@ class ConsoleDriverServiceProvider extends ServiceProvider
     public function register()
     {
         // Register driver in BotMan
-        if ($this->app->runningInConsole() {
+        if ($this->app->runningInConsole()) {
             DriverManager::loadDriver(ConsoleDriver::class);
         }
     }
