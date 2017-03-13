@@ -16,7 +16,7 @@ Navigate to ``config/app.php`` and add the following under providers
 
 Publish assets (Console chat command)
 ```bash
-php artisan vendor:publish --force --provider="Sempro\ConsoleDriver\Providers\ServiceProvider"
+php artisan vendor:publish --force --provider="Sempro\ConsoleDriver\Providers\ConsoleDriverServiceProvider"
 ```
 
 Register command in ``app/Console/Kernel.php``

@@ -1,12 +1,12 @@
 <?php
 namespace Sempro\ConsoleDriver\Providers;
 
-use Illuminate\Support\ServiceProvider as BaseServiceProvider;
+use Illuminate\Support\ServiceProvider;
 use Mpociot\BotMan\DriverManager;
 use Sempro\ConsoleDriver\Console\Commands\ConsoleChat;
 use Sempro\ConsoleDriver\Drivers\ConsoleDriver;
 
-class ServiceProvider extends BaseServiceProvider
+class ConsoleDriverServiceProvider extends ServiceProvider
 {
     /**
      * Register the service provider.
@@ -16,7 +16,9 @@ class ServiceProvider extends BaseServiceProvider
     public function register()
     {
         // Register driver in BotMan
-        DriverManager::loadDriver(ConsoleDriver::class);
+        if ($this->app->runningInConsole() {
+            DriverManager::loadDriver(ConsoleDriver::class);
+        }
     }
 
     /**
